@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Deduções IRS" purpose="Rever e editar montantes de dedução por categoria">
+  <div class="space-y-5">
+    <div class="border border-gray-300 rounded-lg bg-white divide-y divide-gray-100">
+      <div class="flex items-center justify-between px-5 py-4">
+        <div>
+          <p class="font-medium">Saúde</p>
+          <p class="text-xs text-gray-500">Despesas médicas, farmácia, seguros</p>
+        </div>
+        <div class="border border-gray-300 rounded px-3 py-1 text-sm w-28 text-right">€ 480,00</div>
+      </div>
+      <div class="flex items-center justify-between px-5 py-4">
+        <div>
+          <p class="font-medium">Educação</p>
+          <p class="text-xs text-gray-500">Formações, cursos, livros</p>
+        </div>
+        <div class="border border-gray-300 rounded px-3 py-1 text-sm w-28 text-right">€ 320,00</div>
+      </div>
+      <div class="flex items-center justify-between px-5 py-4">
+        <div>
+          <p class="font-medium">Habitação</p>
+          <p class="text-xs text-gray-500">Rendas, juros de crédito habitação</p>
+        </div>
+        <div class="border border-gray-300 rounded px-3 py-1 text-sm w-28 text-right">€ 440,00</div>
+      </div>
+      <div class="flex items-center justify-between px-5 py-4">
+        <div>
+          <p class="font-medium">Despesas gerais familiares</p>
+          <p class="text-xs text-gray-500">Supermercado, serviços, outros</p>
+        </div>
+        <div class="border border-gray-300 rounded px-3 py-1 text-sm w-28 text-right">€ 250,00</div>
+      </div>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg p-4 bg-gray-50">
+      <div class="flex justify-between text-sm">
+        <span class="text-gray-600">Total de deduções</span>
+        <span class="font-semibold">€ 1.490,00</span>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-between pt-2">
+      <a href="/dashboard" class="text-sm text-gray-600 hover:text-gray-900">← Dashboard</a>
+      <a href="/dashboard" class="bg-gray-900 text-white rounded px-6 py-2 text-sm font-medium hover:bg-gray-800">Guardar</a>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Configuração inicial" purpose="Fornecer os dados financeiros necessários para popular o dashboard">
+  <div class="space-y-4">
+    <a href="/despesas-por-categoria" class="block border border-gray-300 rounded-lg p-5 bg-white hover:border-gray-400">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="font-medium">Despesas por categoria</p>
+          <p class="text-sm text-gray-500">Introduzir gastos por categoria</p>
+        </div>
+        <span class="text-gray-400">→</span>
+      </div>
+    </a>
+
+    <a href="/bens-patrimoniais" class="block border border-gray-300 rounded-lg p-5 bg-white hover:border-gray-400">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="font-medium">Bens patrimoniais</p>
+          <p class="text-sm text-gray-500">Listar bens e o seu valor atual</p>
+        </div>
+        <span class="text-gray-400">→</span>
+      </div>
+    </a>
+
+    <a href="/dados-pessoais" class="block border border-gray-300 rounded-lg p-5 bg-white hover:border-gray-400">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="font-medium">Dados pessoais</p>
+          <p class="text-sm text-gray-500">Idade e outros dados pessoais</p>
+        </div>
+        <span class="text-gray-400">→</span>
+      </div>
+    </a>
+
+    <a href="/pagina-financeira-individual" class="block border border-gray-300 rounded-lg p-5 bg-white hover:border-gray-400">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="font-medium">Página financeira individual</p>
+          <p class="text-sm text-gray-500">Importar dados da página financeira Subvisual</p>
+        </div>
+        <span class="text-gray-400">→</span>
+      </div>
+    </a>
+
+    <a href="/recibos-de-vencimento" class="block border border-gray-300 rounded-lg p-5 bg-white hover:border-gray-400">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="font-medium">Recibos de vencimento</p>
+          <p class="text-sm text-gray-500">Carregar recibos de vencimento mensais</p>
+        </div>
+        <span class="text-gray-400">→</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="mt-8 flex justify-end">
+    <a href="/dashboard" class="bg-gray-900 text-white rounded px-6 py-2 text-sm font-medium hover:bg-gray-800">
+      Concluir configuração →
+    </a>
+  </div>
+</Layout>

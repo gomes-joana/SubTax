@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Património" purpose="Acompanhar o valor dos bens mês a mês numa tabela editável">
+  <div class="space-y-5">
+    <div class="border border-gray-300 rounded-lg bg-white overflow-x-auto">
+      <table class="w-full text-sm min-w-[640px]">
+        <thead>
+          <tr class="border-b border-gray-200 bg-gray-50">
+            <th class="text-left px-4 py-3 font-medium text-gray-600 w-8">#</th>
+            <th class="text-left px-4 py-3 font-medium text-gray-600">Asset</th>
+            <th class="text-right px-4 py-3 font-medium text-gray-600">Janeiro</th>
+            <th class="text-right px-4 py-3 font-medium text-gray-600">Fevereiro</th>
+            <th class="text-right px-4 py-3 font-medium text-gray-600">Março</th>
+            <th class="text-right px-4 py-3 font-medium text-gray-600">Abril</th>
+            <th class="text-right px-4 py-3 font-medium text-gray-600">Maio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-4 py-3 text-gray-400">1</td>
+            <td class="px-4 py-3">Conta poupança</td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 14.200</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 14.500</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 14.800</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 15.000</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 15.000</span>
+            </td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-4 py-3 text-gray-400">2</td>
+            <td class="px-4 py-3">Automóvel</td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 12.500</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 12.400</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 12.200</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 12.100</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 12.000</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 text-gray-400">3</td>
+            <td class="px-4 py-3">Portfólio ETF</td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 7.800</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 8.100</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 7.900</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 8.300</span>
+            </td>
+            <td class="px-4 py-3 text-right">
+              <span class="border border-gray-200 rounded px-2 py-1">€ 8.500</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <a href="/patrimonio" class="inline-block border border-dashed border-gray-300 rounded-lg px-4 py-2 text-sm text-gray-500 hover:border-gray-400 hover:text-gray-700">
+      + Adicionar linha
+    </a>
+
+    <div class="flex items-center justify-between pt-2">
+      <a href="/dashboard" class="text-sm text-gray-600 hover:text-gray-900">← Dashboard</a>
+    </div>
+  </div>
+</Layout>

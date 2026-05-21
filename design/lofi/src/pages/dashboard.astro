@@ -1,0 +1,116 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Dashboard" purpose="Visão geral da situação financeira e fiscal">
+
+  <!-- Section 1: Salário e benefícios -->
+  <section class="mb-10">
+    <h2 class="text-lg font-medium mb-4">Salário e benefícios</h2>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="border border-gray-300 rounded-lg p-5 bg-white">
+        <p class="text-xs text-gray-500 uppercase mb-1">Salário líquido</p>
+        <p class="text-2xl font-semibold">€ 1.950</p>
+        <p class="text-xs text-gray-500 mt-1">mensal</p>
+      </div>
+      <div class="border border-gray-300 rounded-lg p-5 bg-white">
+        <p class="text-xs text-gray-500 uppercase mb-1">Perk balance</p>
+        <p class="text-2xl font-semibold">€ 350</p>
+        <p class="text-xs text-gray-500 mt-1">mensal</p>
+      </div>
+      <div class="border border-gray-300 rounded-lg p-5 bg-white">
+        <p class="text-xs text-gray-500 uppercase mb-1">Company balance</p>
+        <p class="text-2xl font-semibold">€ 4.200</p>
+        <p class="text-xs text-gray-500 mt-1">acumulado</p>
+      </div>
+    </div>
+    <div class="mt-3">
+      <a href="/recibos-de-vencimento" class="text-sm text-gray-600 hover:text-gray-900">+ Adicionar recibo de vencimento</a>
+    </div>
+  </section>
+
+  <!-- Section 2: Património -->
+  <section class="mb-10">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-lg font-medium">Património</h2>
+      <a href="/patrimonio" class="text-sm text-gray-600 hover:text-gray-900">Editar →</a>
+    </div>
+    <div class="border border-gray-300 rounded-lg p-5 bg-white">
+      <p class="text-xs text-gray-500 uppercase mb-3">Evolução do património por categoria</p>
+      <!-- Chart placeholder -->
+      <div class="h-40 bg-gray-100 rounded flex items-end justify-between px-4 pb-2">
+        <div class="flex flex-col items-center gap-1">
+          <div class="w-6 bg-gray-400 rounded-t" style="height: 60px"></div>
+          <span class="text-xs text-gray-500">Jan</span>
+        </div>
+        <div class="flex flex-col items-center gap-1">
+          <div class="w-6 bg-gray-400 rounded-t" style="height: 72px"></div>
+          <span class="text-xs text-gray-500">Fev</span>
+        </div>
+        <div class="flex flex-col items-center gap-1">
+          <div class="w-6 bg-gray-400 rounded-t" style="height: 68px"></div>
+          <span class="text-xs text-gray-500">Mar</span>
+        </div>
+        <div class="flex flex-col items-center gap-1">
+          <div class="w-6 bg-gray-400 rounded-t" style="height: 85px"></div>
+          <span class="text-xs text-gray-500">Abr</span>
+        </div>
+        <div class="flex flex-col items-center gap-1">
+          <div class="w-6 bg-gray-400 rounded-t" style="height: 90px"></div>
+          <span class="text-xs text-gray-500">Mai</span>
+        </div>
+      </div>
+      <div class="flex gap-4 mt-3 text-xs text-gray-500">
+        <span>■ Poupanças</span>
+        <span>■ Veículos</span>
+        <span>■ Investimentos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Impostos -->
+  <section class="mb-10">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-lg font-medium">Impostos</h2>
+      <a href="/deducoes-irs" class="text-sm text-gray-600 hover:text-gray-900">Editar deduções →</a>
+    </div>
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div class="border border-gray-300 rounded-lg p-5 bg-white">
+        <p class="text-xs text-gray-500 uppercase mb-1">Deduções provisórias IRS</p>
+        <p class="text-2xl font-semibold">€ 1.240</p>
+        <p class="text-xs text-gray-500 mt-1">total acumulado</p>
+      </div>
+      <div class="border border-gray-300 rounded-lg p-5 bg-white">
+        <p class="text-xs text-gray-500 uppercase mb-1">Escalão</p>
+        <p class="text-2xl font-semibold">3.º</p>
+        <p class="text-xs text-gray-500 mt-1">28,5%</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="border border-gray-300 rounded-lg p-5 bg-white">
+        <p class="text-xs text-gray-500 uppercase mb-1">Impostos pagos (2026)</p>
+        <p class="text-2xl font-semibold">€ 3.850</p>
+        <p class="text-xs text-gray-500 mt-1">até ao momento</p>
+      </div>
+      <div class="border border-gray-300 rounded-lg p-5 bg-white">
+        <p class="text-xs text-gray-500 uppercase mb-1">Poupança em impostos (2026)</p>
+        <p class="text-2xl font-semibold">€ 620</p>
+        <p class="text-xs text-gray-500 mt-1">até ao momento</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Chat shortcut -->
+  <section>
+    <a href="/assistente-ai" class="block border border-gray-300 rounded-lg p-5 bg-white hover:border-gray-400">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-gray-200 rounded-full flex-shrink-0"></div>
+        <div>
+          <p class="font-medium">Assistente AI</p>
+          <p class="text-sm text-gray-500">Perguntas sobre impostos e sugestões de otimização</p>
+        </div>
+        <span class="text-gray-400 ml-auto">→</span>
+      </div>
+    </a>
+  </section>
+</Layout>

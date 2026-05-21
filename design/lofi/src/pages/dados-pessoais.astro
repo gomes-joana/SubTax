@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Dados pessoais" purpose="Introduzir idade e outros dados pessoais">
+  <div class="max-w-md space-y-5">
+    <div class="border border-gray-300 rounded-lg p-5 bg-white space-y-4">
+      <div>
+        <label class="block text-sm text-gray-600 mb-1">Nome</label>
+        <div class="border border-gray-300 rounded px-3 py-2 text-sm text-gray-700">Ana Silva</div>
+      </div>
+      <div>
+        <label class="block text-sm text-gray-600 mb-1">Idade</label>
+        <div class="border border-gray-300 rounded px-3 py-2 text-sm text-gray-700">29</div>
+      </div>
+      <div>
+        <label class="block text-sm text-gray-600 mb-1">NIF</label>
+        <div class="border border-gray-300 rounded px-3 py-2 text-sm text-gray-700">123 456 789</div>
+      </div>
+      <div>
+        <label class="block text-sm text-gray-600 mb-1">Estado civil</label>
+        <div class="border border-gray-300 rounded px-3 py-2 text-sm text-gray-700">Solteira</div>
+      </div>
+      <div>
+        <label class="block text-sm text-gray-600 mb-1">Dependentes</label>
+        <div class="border border-gray-300 rounded px-3 py-2 text-sm text-gray-700">0</div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-between pt-2">
+      <a href="/configuracao-inicial" class="text-sm text-gray-600 hover:text-gray-900">← Voltar</a>
+      <a href="/configuracao-inicial" class="bg-gray-900 text-white rounded px-6 py-2 text-sm font-medium hover:bg-gray-800">Guardar</a>
+    </div>
+  </div>
+</Layout>

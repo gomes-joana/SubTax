@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Despesas por categoria" purpose="Introduzir gastos por categoria">
+  <div class="space-y-4">
+    <div class="border border-gray-300 rounded-lg p-5 bg-white">
+      <div class="flex items-center justify-between mb-3">
+        <p class="font-medium">Saúde</p>
+        <div class="border border-gray-300 rounded px-3 py-1 text-sm w-28 text-right text-gray-700">€ 480,00</div>
+      </div>
+      <div class="flex items-center justify-between mb-3">
+        <p class="font-medium">Educação</p>
+        <div class="border border-gray-300 rounded px-3 py-1 text-sm w-28 text-right text-gray-700">€ 320,00</div>
+      </div>
+      <div class="flex items-center justify-between mb-3">
+        <p class="font-medium">Habitação</p>
+        <div class="border border-gray-300 rounded px-3 py-1 text-sm w-28 text-right text-gray-700">€ 440,00</div>
+      </div>
+      <div class="flex items-center justify-between mb-3">
+        <p class="font-medium">Transportes</p>
+        <div class="border border-gray-300 rounded px-3 py-1 text-sm w-28 text-right text-gray-700">€ 150,00</div>
+      </div>
+      <div class="flex items-center justify-between">
+        <p class="font-medium">Outros</p>
+        <div class="border border-gray-300 rounded px-3 py-1 text-sm w-28 text-right text-gray-700">€ 85,00</div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-between pt-2">
+      <a href="/configuracao-inicial" class="text-sm text-gray-600 hover:text-gray-900">← Voltar</a>
+      <a href="/configuracao-inicial" class="bg-gray-900 text-white rounded px-6 py-2 text-sm font-medium hover:bg-gray-800">Guardar</a>
+    </div>
+  </div>
+</Layout>

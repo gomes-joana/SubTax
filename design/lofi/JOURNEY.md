@@ -1,0 +1,3 @@
+# Journey — SubTax
+
+Ana Silva is a 29-year-old mid-level developer who has been at Subvisual for two years. She earns a gross monthly salary of €2,800 (€1,950 net), receives a perk balance of €350/month, and has accumulated a company balance of €4,200. She owns three assets: a savings account at €15,000, a car worth €12,000, and an ETF portfolio valued at €8,500. She is single with no dependents and falls in the 3rd tax bracket (28.5%). So far in 2026 she has registered €1,240 in IRS deductions across health (€480), education (€320), and housing (€440), paid €3,850 in taxes, and saved €620 through deductions. She uploaded four salary receipts (January through April). She is exploring how to maximize her deductions before the end of the fiscal year.

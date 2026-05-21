@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Assistente AI" purpose="Perguntas sobre impostos e finanças com sugestões proativas de otimização">
+  <div class="space-y-5">
+
+    <!-- Suggestions -->
+    <div>
+      <p class="text-xs text-gray-500 uppercase font-medium mb-3">Sugestões automáticas</p>
+      <div class="space-y-2">
+        <div class="border border-gray-300 rounded-lg p-4 bg-white">
+          <p class="text-sm font-medium mb-1">Maximizar deduções de saúde</p>
+          <p class="text-sm text-gray-500">Ainda tens margem de € 520 no limite de deduções de saúde para 2026. Considera agendar consultas antes do final do ano.</p>
+        </div>
+        <div class="border border-gray-300 rounded-lg p-4 bg-white">
+          <p class="text-sm font-medium mb-1">PPR para reduzir escalão</p>
+          <p class="text-sm text-gray-500">Uma contribuição de € 2.000 para um PPR poderia reduzir o teu IRS em até € 400 e aproximar-te do 2.º escalão.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conversation -->
+    <div>
+      <p class="text-xs text-gray-500 uppercase font-medium mb-3">Conversa</p>
+      <div class="border border-gray-300 rounded-lg bg-white overflow-hidden">
+        <div class="p-4 space-y-4 min-h-[200px]">
+          <div class="flex gap-3">
+            <div class="w-6 h-6 bg-gray-200 rounded-full flex-shrink-0 mt-1"></div>
+            <div class="bg-gray-100 rounded-lg px-4 py-3 text-sm max-w-md">
+              <p>Olá Ana! Posso ajudar-te com questões sobre impostos, deduções e otimização fiscal. O que precisas?</p>
+            </div>
+          </div>
+          <div class="flex gap-3 justify-end">
+            <div class="bg-gray-800 text-white rounded-lg px-4 py-3 text-sm max-w-md">
+              <p>Quanto posso deduzir em educação este ano?</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-6 h-6 bg-gray-200 rounded-full flex-shrink-0 mt-1"></div>
+            <div class="bg-gray-100 rounded-lg px-4 py-3 text-sm max-w-md">
+              <p>Para 2026, o limite de deduções de educação é de € 800. Já tens € 320 registados. Podes deduzir mais € 480 em despesas elegíveis como formações, livros técnicos ou cursos certificados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-200 p-3 flex gap-2">
+          <div class="flex-1 border border-gray-300 rounded px-3 py-2 text-sm text-gray-400">Escrever mensagem...</div>
+          <div class="bg-gray-900 text-white rounded px-4 py-2 text-sm font-medium">Enviar</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-2">
+      <a href="/dashboard" class="text-sm text-gray-600 hover:text-gray-900">← Dashboard</a>
+    </div>
+  </div>
+</Layout>
